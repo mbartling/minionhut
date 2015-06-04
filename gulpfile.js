@@ -10,7 +10,9 @@ var paths = {
 	'src':['./models/**/*.js','./routes/**/*.js', 'keystone.js', 'package.json']
 };
 
+gulp.task('default', function(){
 
+});
 // gulp lint
 gulp.task('lint', function(){
 	gulp.src(paths.src)
