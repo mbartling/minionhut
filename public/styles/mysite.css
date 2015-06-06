@@ -1,0 +1,8 @@
+/*.jumbotron {*/
+  /*background-image: url("/images/bokeh.jpg");*/
+  /*background-color: @brand-success;*/
+  /*background-size: cover;*/
+/*}*/
+.modal-body{
+  max-height: 80vw;
+}
