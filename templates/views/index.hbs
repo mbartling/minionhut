@@ -23,18 +23,42 @@
 		</blockquote>
 	</div>
 
-<div class="well">
+<!-- <div class="well"> -->
 	
-
+<div class="container">
 <h1>Papers</h1>
 <ul>
 		<li><a href="/documents/CAL_finalreport.pdf">CAL: A Context Aware Lifestyle</a></li>
 		<li><a href="/documents/HashFIT.pdf">HashFIT: A Theoretical Filesystem using a Universal-Hash-Based File Index Table (Brief)</a></li>
-</ul>	
+</ul>
 </div>
+<!-- </div> -->
+<div class="container">
+	<h1>Recent Posts</h1>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-8 col-md-9">
+			<h4 class="text-weight-normal">Showing {{ data.posts.results.length}} post.</h4>
+			<div class="blog">
+				{{# each data.posts.results}}
+				<div data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}" class="post">
+					<h2><a href="{{postUrl slug}}">{{{title}}}</a></h2>
+					<p class="lead text-muted">{{{categoryList categories prefix="Posted in "}}}
+							{{#if author.name.first}}by {{author.name.first}}{{/if}}
+					</p>
+					<p>{{{content.extended}}}</p>
+					<p class="read-more"><a href="{{postUrl slug}}">Read more...</a></p>
+				</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</div>
+<div class="well">
 
 	<p>
 		Remember to <a href='https://github.com/mbartling' target='_blank'>Check out my GitHub</a> 
 	</p>
-
+</div>
 </div>
