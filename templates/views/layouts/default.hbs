@@ -10,6 +10,7 @@
 
 	<link href="/styles/bootstrap_flatly.min.css" rel="stylesheet">
 	<link href="/styles/mysite.css" rel="stylesheet">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
 
 	{{!-- This file provides the default styling for the KeystoneJS Content Editor 
 	- only renders when user is logged in and admin--}}
@@ -119,5 +120,7 @@
 		<script src="/js/bootstrap/bootstrap-3.3.4.min.js"></script>
 		{{{isAdminEditorJS user}}}
 		<script src="/js/imagehandle.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>	
+		<script>hljs.initHighlightingOnLoad();</script>	
 	</body>
 	</html>
