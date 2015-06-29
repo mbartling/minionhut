@@ -11,28 +11,26 @@
     </div>
   </div> <!-- end Jumbotron-->
   
+  <div class="container">
+  <div class="row">
   {{# each minions}}
   {{#if isMinion}}
-  <div class="row">
-    <div class="col-xs-8 col-sm-8">
+    <div class="col-xs-8 col-sm-4">
     <h2>{{{name.first}}} {{{name.last}}}</h2>
-    </div>
-    <div class="col-xs-8 col-sm-8">
+<!--     </div>
+    <div class="col-xs-8 col-sm-4"> -->
       {{#if image}}
         <img src="{{cloudinaryUrl image}}" width="150" alt="" class="img-circle img-responsive">
       {{/if}}
+        <p>{{{bio}}}</p> 
     </div>
-  </div>
-  <div class="row">
-  <div class="col-sm-12">
-    <p>{{{bio}}}</p> 
-  </div>
-  </div>
-  <hr> 
   {{/if}}
   {{/each}}
+  </div>
+  <hr> 
+
   <p>
     Remember to <a href='https://github.com/mbartling' target='_blank'>Check out my GitHub</a> 
   </p>
-
+</div>
 </div>
