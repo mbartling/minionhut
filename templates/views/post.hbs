@@ -11,6 +11,16 @@
 						{{#if author.name.first}}by {{author.name.first}}{{/if}}
 					</h5>
 				</header>
+				{{#if data.post.image}}
+				<div class="row  gallery-images">
+					<div class="col-xs-4 col-sm-4 col-md-3 gallery-image">
+					<a href="{{cloudinaryUrl data.post.image}}" title="" data-gallery>
+							<img src="{{cloudinaryUrl data.post.image}}" class="img-rounded img-responsive">
+						</a>
+					</div>
+				</div>
+				{{/if}}
+
 				<div class="post">
 					{{{data.post.content.extended}}}
 				</div>
