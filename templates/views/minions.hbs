@@ -14,6 +14,26 @@
   <h1>
     Under Construction!
   </h1>
+  {{# each minions}}
+  {{#if isMinion}}
+  <div class="row">
+    <div class="col-xs-8 col-sm-8">
+    <h2>{{{name.first}}} {{{name.last}}}</h2>
+    </div>
+    <div class="col-xs-8 col-sm-8">
+      {{#if image}}
+        <img src="{{cloudinaryUrl image}}" width="150" alt="" class="img-circle img-responsive">
+      {{/if}}
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-sm-8">
+    <p>{{{bio}}}</p> 
+  </div>
+  </div>
+  <hr> 
+  {{/if}}
+  {{/each}}
   <p>
     Remember to <a href='https://github.com/mbartling' target='_blank'>Check out my GitHub</a> 
   </p>
